@@ -5,6 +5,7 @@
 #include <Wire.h>
 #include <Adafruit_MCP23017.h>
 #include <BricktronicsShield.h>
+
 BricktronicsMotor m1(BricktronicsShield::MOTOR_1);
 BricktronicsMotor m2(BricktronicsShield::MOTOR_2);
 
@@ -44,7 +45,7 @@ void delayUpdateMotors(uint32_t delayMS)
     }
 }
 
-void loop() 
+void loop()
 {
 //    Serial.print("Sending motors to +/- 180 ticks = +/- 90 degrees...");
 //    m1.goToPosition(180);
@@ -64,4 +65,3 @@ void loop()
 //    Serial.println("done");
 //    delayUpdateMotors(2000);
 }
-
