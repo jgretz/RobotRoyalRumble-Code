@@ -1,0 +1,6 @@
+Z:\Development\Gretz\RobotRoyalRumble-Code\C#\Robo\bin\Debug\Robo.exe.config
+Z:\Development\Gretz\RobotRoyalRumble-Code\C#\Robo\bin\Debug\Robo.exe
+Z:\Development\Gretz\RobotRoyalRumble-Code\C#\Robo\bin\Debug\Robo.pdb
+Z:\Development\Gretz\RobotRoyalRumble-Code\C#\Robo\obj\Debug\Robo.csprojResolveAssemblyReference.cache
+Z:\Development\Gretz\RobotRoyalRumble-Code\C#\Robo\obj\Debug\Robo.exe
+Z:\Development\Gretz\RobotRoyalRumble-Code\C#\Robo\obj\Debug\Robo.pdb
