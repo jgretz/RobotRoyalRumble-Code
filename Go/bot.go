@@ -15,7 +15,7 @@ const DIR_R = "7"
 
 func main() {
   gbot := gobot.NewGobot()
-  firmataAdaptor := firmata.NewFirmataAdaptor("arduino", "/dev/tty.usbmodem1421")
+  firmataAdaptor := firmata.NewFirmataAdaptor("arduino", "/dev/cu.usbmodem1421")
 
   leftMotor := newMotor(firmataAdaptor, "left", PWM_L, DIR_L)
   rightMotor := newMotor(firmataAdaptor, "right", PWM_R, DIR_R)

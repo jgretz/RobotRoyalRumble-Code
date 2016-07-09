@@ -1,7 +1,6 @@
 package main
 
 import (
-  "fmt"
   "time"
 
   "github.com/hybridgroup/gobot"
@@ -11,7 +10,7 @@ import (
 
 func main() {
   gbot := gobot.NewGobot()
-  firmataAdaptor := firmata.NewFirmataAdaptor("arduino", "/dev/tty.usbmodem1421")
+  firmataAdaptor := firmata.NewFirmataAdaptor("arduino", "/dev/cu.usbmodem1421")
   led := gpio.NewLedDriver(firmataAdaptor, "led", "13")
 
   work := func() {
