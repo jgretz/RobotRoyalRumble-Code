@@ -15,14 +15,17 @@ void setup()
 }
 
 void loop()
-{ 
+{
+  int speed = 50;
+  int sleep = 1000;
+  
   digitalWrite(LED_PIN, HIGH); 
-  setSpeeds(100, 100);
-  delay(500);
+  setSpeeds(speed, speed);
+  delay(sleep);
  
   digitalWrite(LED_PIN, LOW); 
-  setSpeeds(-100, -100);
-  delay(500);
+  setSpeeds(-1 * speed, -1 * speed);
+  delay(sleep);
 }
 
 void setSpeeds(int left, int right) {
@@ -37,11 +40,7 @@ void setSpeed(int speedPin, int directionPin, int speed) {
     speed = speed * -1;
   }
 
-  if (speed > 400) { 
-    speed = 400;
-  }
-
-  analogWrite(speedPin, speed * 51 / 80);
+  analogWrite(speedPin, speed);
   digitalWrite(directionPin, direction);
 }
 

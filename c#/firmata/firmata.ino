@@ -5,9 +5,9 @@
 #define DIR_R 7
 
 byte inputByte_0; // signal 
-byte inputByte_1; // type (0 = analog, 1 = digital) / junk
+byte inputByte_1; // type (0 = analog, 1 = digital)
 byte inputByte_2; // pin
-byte inputByte_3; // value / pin mode
+byte inputByte_3; // value
 
 void setup()
 {

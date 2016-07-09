@@ -7,14 +7,11 @@ namespace Robo
   {
     private const int HIGH = 1;
     private const int LOW = 0;
-
-    private const int LED = 13;
+    
     private const int PWM_L = 10;
     private const int PWM_R = 9;
     private const int DIR_L = 8;
     private const int DIR_R = 7;
-
-    private const int MAXSPEED = 400;
 
     private Connection _connection;
     
@@ -49,9 +46,9 @@ namespace Robo
     private void SetSpeed(int speedPin, int directionPin, int speed)
     {
       bool reverse = speed < 0;
-      speed = Math.Min(400, Math.Abs(speed));
+      speed = Math.Abs(speed);
 
-      _connection.Write(WriteMethod.Analog, speedPin, speed * 51 / 80);
+      _connection.Write(WriteMethod.Analog, speedPin, speed);
       _connection.Write(WriteMethod.Digital, directionPin, reverse ? HIGH : LOW);
     }
 

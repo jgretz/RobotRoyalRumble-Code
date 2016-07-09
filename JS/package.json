@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "debug": "nodemon index.js"
+    "debug-bot": "nodemon bot.js",
+    "debug-led": "nodemon led.js"
   },
   "author": "",
   "license": "MIT",

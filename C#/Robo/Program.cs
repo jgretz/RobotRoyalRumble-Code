@@ -5,6 +5,9 @@ namespace Robo
 {
   class Program
   {
+    const int speed = 50;
+    const int sleep = 1000;
+
     static void Main(string[] args)
     {
       using (var robot = new Bot())
@@ -14,15 +17,15 @@ namespace Robo
         string input = string.Empty;
         while (input == string.Empty)
         {
-          robot.SetSpeeds(100, 100);
+          robot.SetSpeeds(speed, speed);
           Console.WriteLine("Move Forward");
 
-          Thread.Sleep(500);
+          Thread.Sleep(sleep);
 
-          robot.SetSpeeds(-100, -100);
+          robot.SetSpeeds(-1 * speed, -1 * speed);
           Console.WriteLine("Move Back");
 
-          Thread.Sleep(500);
+          Thread.Sleep(sleep);
 
           robot.SetSpeeds(0, 0);
 
